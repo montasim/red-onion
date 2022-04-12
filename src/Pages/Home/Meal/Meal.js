@@ -14,7 +14,7 @@ const Meal = ({ meal }) => {
                         <Card.Text>
                             Price: ${idMeal}
                         </Card.Text>
-                        <Button variant="primary">Buy Now</Button>
+                        <Button variant="primary">Order Now</Button>
                     </Card.Body>
                 </Card>
             </Container>
