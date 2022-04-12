@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../Hooks/Firebase.Init';
 import logo from '../../../Media/Logo/logo.png';
 import CustomLink from '../../CustomLink/CustomLink';

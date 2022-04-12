@@ -1,7 +1,12 @@
 import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../Hooks/Firebase.Init';
 
 const Checkout = () => {
+    const [user] = useAuthState(auth);
+
+
     return (
         <div className='my-5 w-lg-50'>
             <Container>
@@ -9,7 +14,7 @@ const Checkout = () => {
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" readOnly />
+                        <Form.Control type="email" value={user?.email} readOnly />
                         <Form.Text className="text-muted">
                             We'll never share your email with anyone else.
                         </Form.Text>
