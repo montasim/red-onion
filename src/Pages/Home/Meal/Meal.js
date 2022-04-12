@@ -5,7 +5,9 @@ const Meal = ({ meal }) => {
     const { strMeal, strMealThumb, idMeal } = meal;
 
     return (
-        <div className='g-3 col-sm-12 col-md-6 col-lg-3 my-4'>
+        <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" className='g-3 col-sm-12 col-md-6 col-lg-3 my-4'>
             <Container>
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={strMealThumb} />

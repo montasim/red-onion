@@ -6,7 +6,9 @@ import Meals from '../Meals/Meals';
 
 const Home = () => {
     return (
-        <div className='m-3 p-3'>
+        <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" className='m-3 p-3'>
             <Card>
                 <Card.Img variant="top" src={image1} style={{ height: '350px' }} />
                 <Card.Body>
