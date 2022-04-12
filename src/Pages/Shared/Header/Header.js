@@ -21,12 +21,12 @@ const Header = () => {
                         <Nav className="me-auto">
 
                         </Nav>
-                        <Nav>
-                            <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link href="/hot">Hot</Nav.Link>
-                            <Nav.Link href="/checkout">Checkout</Nav.Link>
-                            <Nav.Link href="/about">About</Nav.Link>
-                            <Nav.Link href="/login">Login</Nav.Link>
+                        <Nav className='h6 text-uppercase'>
+                            <Nav.Link className='text-white' href="/home">Home</Nav.Link>
+                            <Nav.Link className='text-white' href="/hot">Hot</Nav.Link>
+                            <Nav.Link className='text-white' href="/checkout">Checkout</Nav.Link>
+                            <Nav.Link className='text-white' href="/about">About</Nav.Link>
+                            <Nav.Link className='text-white' href="/login">Login</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
