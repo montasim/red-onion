@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import image1 from '../../../Media/Images/carousel-1.png';
 import Categories from '../Categories/Categories';
+import Meals from '../Meals/Meals';
 
 const Home = () => {
     return (
@@ -17,6 +18,8 @@ const Home = () => {
             </Card>
 
             <Categories />
+
+            <Meals />
         </div >
     );
 };
