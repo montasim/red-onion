@@ -18,7 +18,7 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    const from = location?.state?.from?.pathname || '/checkout';
+    const from = location?.state?.from?.pathname || '/home';
 
     const handleEmailBlur = event => {
         setEmail(event.target.value);
