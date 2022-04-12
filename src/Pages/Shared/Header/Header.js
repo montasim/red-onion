@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../../Media/Logo/logo.png';
+import CustomLink from '../../CustomLink/CustomLink';
 
 const Header = () => {
     return (
         <header>
             <Navbar className='py-3' collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/">
+                    <Navbar.Brand to="/">
                         <img
                             src={logo}
                             height="40"
@@ -22,11 +23,11 @@ const Header = () => {
 
                         </Nav>
                         <Nav className='h6 text-uppercase'>
-                            <Nav.Link className='text-white' href="/home">Home</Nav.Link>
-                            <Nav.Link className='text-white' href="/hot">Hot</Nav.Link>
-                            <Nav.Link className='text-white' href="/checkout">Checkout</Nav.Link>
-                            <Nav.Link className='text-white' href="/about">About</Nav.Link>
-                            <Nav.Link className='text-white' href="/login">Login</Nav.Link>
+                            <CustomLink className='text-white me-3 text-decoration-none ' to="/home">Home</CustomLink>
+                            <CustomLink className='text-white me-3 text-decoration-none' to="/hot">Hot</CustomLink>
+                            <CustomLink className='text-white me-3 text-decoration-none' to="/checkout">Checkout</CustomLink>
+                            <CustomLink className='text-white me-3 text-decoration-none' to="/about">About</CustomLink>
+                            <CustomLink className='text-white me-3 text-decoration-none' to="/login">Login</CustomLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
