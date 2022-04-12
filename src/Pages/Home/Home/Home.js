@@ -1,10 +1,20 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
+import image1 from '../../../Media/Images/carousel-1.png';
 
 const Home = () => {
     return (
-        <div>
-            <h2>Home</h2>
-        </div>
+        <div className='m-3 p-3'>
+            <Card>
+                <Card.Img variant="top" src={image1} style={{ height: '350px' }} />
+                <Card.Body>
+                    <Card.Text>
+                        Some quick example text to build on the card title and make up the bulk
+                        of the card's content.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </div >
     );
 };
 
