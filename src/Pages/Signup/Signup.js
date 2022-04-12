@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
+import { AiFillGoogleCircle, AiOutlineGithub } from 'react-icons/ai';
+import { FaFacebookF } from 'react-icons/fa';
 
 const Signup = () => {
     return (
@@ -27,6 +29,12 @@ const Signup = () => {
                     <Button variant="primary" type="submit">
                         Submit
                     </Button>
+
+                    <div className='mt-5 row gap-2'>
+                        <Button className='items-center' variant="secondary"><AiFillGoogleCircle className='me-2' />Continue With Google</Button>
+                        <Button className='items-center' variant="secondary"><AiOutlineGithub className='me-2' />Continue With Github</Button>
+                        <Button className='items-center' variant="secondary"><FaFacebookF className='me-2' />Continue With Facebook</Button>
+                    </div>
                 </Form>
             </Container>
         </div>
